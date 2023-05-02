@@ -11,7 +11,7 @@ locate the closest food trucks
 		dataType: 'json',
 		data: {	lon:	-122.4,
 			lat:	37.8,
-			type:	tacos,
+			type:	'tacos',
 			limit:	10 },
 		success: function(data) {
 		    if (data.error) { alert(data.error); }
@@ -41,7 +41,7 @@ Food truck locator app finds the closest trucks serving a particular type of foo
 ```json
 {
 	"error" : "human-readable error string(s)",
-	"results" : [ array of the closest food trucks serving the desired fare ]
+	"results" : [*array of the closest food trucks serving the desired fare*]
 }
 ```
 
@@ -59,4 +59,4 @@ This program is licensed under the GNU General Public License 2.0
 
 GitHub repository at:
 
-	[https://github.com/orderamidchaos/food_trucks](https://github.com/orderamidchaos/food_trucks)
+[https://github.com/orderamidchaos/food_trucks](https://github.com/orderamidchaos/food_trucks)
